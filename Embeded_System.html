@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌入式技术知识</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>嵌入式技术知识</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#os">操作系统</a></li>
+            <li><a href="#programming">常用编程语言使用</a></li>
+            <li><a href="#bus">总线模块</a></li>
+            <li><a href="#debugging">调试与维测手段</a></li>
+            <li><a href="#power">电源管理</a></li>
+            <li><a href="#ai">AI应用</a></li>
+        </ul>
+    </nav>
+
+    <section id="os">
+        <h2>操作系统</h2>
+        <ul>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('rtos')">实时操作系统（RTOS）</span>
+                <ul id="rtos" class="hidden">
+                    <li>RTOS 是用于保证任务在预定时间内完成的系统。</li>
+                    <li><button onclick="addDocument('rtos')">添加知识文档</button></li>
+                </ul>
+            </li>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('linux')">嵌入式Linux</span>
+                <ul id="linux" class="hidden">
+                    <li>嵌入式Linux为复杂应用提供丰富功能。</li>
+                    <li><button onclick="addDocument('linux')">添加知识文档</button></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="programming">
+        <h2>常用编程语言使用</h2>
+        <ul>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('c_language')">C语言</span>
+                <ul id="c_language" class="hidden">
+                    <li>C语言是嵌入式开发的核心语言。</li>
+                    <li><button onclick="addDocument('c_language')">添加知识文档</button></li>
+                </ul>
+            </li>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('cpp_language')">C++语言</span>
+                <ul id="cpp_language" class="hidden">
+                    <li>C++支持更复杂的面向对象编程。</li>
+                    <li><button onclick="addDocument('cpp_language')">添加知识文档</button></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="bus">
+        <h2>总线模块</h2>
+        <ul>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('i2c')">IIC</span>
+                <ul id="i2c" class="hidden">
+                    <li>IIC</li>
+                    <li><button onclick="addDocument('i2c')">添加知识文档</button></li>
+                </ul>
+            </li>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('spi')">SPI</span>
+                <ul id="spi" class="hidden">
+                    <li>SPI</li>
+                    <li><button onclick="addDocument('spi')">添加知识文档</button></li>
+                </ul>
+            </li>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('uart')">UART</span>
+                <ul id="uart" class="hidden">
+                    <li>UART</li>
+                    <li><button onclick="addDocument('uart')">添加知识文档</button></li>
+                </ul>
+            </li>
+            <li>
+                <span class="expandable" onclick="toggleSubMenu('i2s')">I2S</span>
+                <ul id="i2s" class="hidden">
+                    <li>I2S</li>
+                    <li><button onclick="addDocument('i2s')">添加知识文档</button></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- 其他目录（总线模块、调试与维测、电源管理、AI应用）按照相同结构 -->
+	
+	
+
+    <footer>
+        <p>&copy; 2024 嵌入式技术知识</p>
+    </footer>
+
+</body>
+</html>
